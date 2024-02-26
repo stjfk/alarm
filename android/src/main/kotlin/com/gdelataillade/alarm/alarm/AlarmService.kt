@@ -78,6 +78,7 @@ class AlarmService : Service() {
 
         val notification = notificationHandler.buildNotification(notificationTitle!!, notificationBody!!, fullScreenIntent!!, pendingIntent)
 
+        /*
         try {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
                 startForeground(id, notification, ServiceInfo.FOREGROUND_SERVICE_TYPE_MEDIA_PLAYBACK)
@@ -92,6 +93,7 @@ class AlarmService : Service() {
         } catch (e: Exception) {
             Log.e("AlarmService", "Error in starting foreground service", e)
         }
+        */
 
         try {
             if (channel != null) {
